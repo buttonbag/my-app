@@ -6,3 +6,4 @@
     - only because it gets unruly when you have too many components
     - technically possible to keep all of the components on one file  
     - if you have a big site, you can start separating components into files
+- React is a lot like PHP
