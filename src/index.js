@@ -1,12 +1,6 @@
 import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
 
-const Navigation = props => {
-  return(
-    <li>test</li>
-    );
-}
-
 class App extends Component {
   render() {
     
@@ -14,8 +8,11 @@ class App extends Component {
       <section>
         <h1>Hello</h1>
         <div className="Head">
+          Head
           <ul>
-            <Navigation />
+            <li>{this.props.navItem1}</li>
+            <li>{this.props.navItem2}</li>
+            <li>{this.props.navItem3}</li>
           </ul>
         </div>
         <div className="Body">Body</div>
@@ -23,6 +20,12 @@ class App extends Component {
       </section>
     );
   }
+}
+
+App.defaultProps = { 
+  navItem1: "item1",
+  navItem2: "item2",
+  navItem3: "item3"
 }
 
 ReactDOM.render(
