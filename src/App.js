@@ -1,27 +1,23 @@
-import React, {Component} from 'react';
+import React from 'react';
 
-class App extends Component {
-    render() {
-
-      const NavItems = props => {
-        return(
-          <li className={props.name}>
-            {props.content}
-            <img src={props.img} alt=""/>
-          </li>
-        );
-      }
-      
-      return(
-        <section>
-          <h1>Hello, Kitty</h1>
-          <ul>
-            <NavItems name='cat 1' img='http://placekitten.com/100' />
-            <NavItems name='cat 2' img='http://placekitten.com/101' />
-          </ul>
-        </section>
-      );
-    }
+const NavItems = props => {
+  return(
+    <li>
+    {props.items.join(' | ')}
+    </li>
+    );
   }
 
-export default App;
+class App extends React.Component {
+  render() {        
+      return(
+        <section>
+        <ul>
+        <NavItems items={['HOME','ABOUT','OUR WORK','SERVICES']} />
+        </ul>
+        </section>
+        );
+      }
+    }
+    
+    export default App;
