@@ -1,4 +1,15 @@
-ul li {
-    display: inline-block;
-    background: red;
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+button {
+    margin: 3em;
+    padding: 1em;
+}
+
+img {
+    flex: 1 auto;
+    width: 100%;
 }
