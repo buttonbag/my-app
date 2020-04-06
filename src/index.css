@@ -14,8 +14,10 @@ body {
     flex: 1 0 auto;
     background: white;
     padding: 15px;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 10px;
 }
 
 .container .counter {
-    padding: 10px;
 }
