@@ -7,7 +7,7 @@ import ControlledInput from './ControlledInput';
 class App extends React.Component {
   render(){
     return(
-      <div>
+      <div className="container">
         {/* build a rock, paper, scissor game */}
         {/* counter */}
         <Counter />

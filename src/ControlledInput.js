@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 
 class ControlledInput extends React.Component {
     constructor(props) {
@@ -7,23 +6,20 @@ class ControlledInput extends React.Component {
       this.state = {
         input: ''
       };
-      // change code below this line
       this.handleChange = this.handleChange.bind(this);
-      // change code above this line
     }
-    // change code below this line
+
     handleChange(event) {
       this.setState({
         input: event.target.value
       });
     }
-    // change code above this line
+
     render() {
       return (
-        <div>
-          { /* change code below this line */}
+        <div className="controlled-input">
+          { /* value is added to update the input DOM element */}
           <input value={this.state.input} onChange={this.handleChange} placeholder='type something' />
-          { /* change code above this line */}
           <h4>Controlled Input:</h4>
           <p>{this.state.input}</p>
         </div>
