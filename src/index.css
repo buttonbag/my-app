@@ -20,7 +20,22 @@ body {
     flex-wrap: wrap;
 }
 
+
 .container h1 {
     width: 100%;
     text-align: center;    
 }
+
+/* COUNTER */
+.container .counter h3 {
+    width: 2em;
+    text-align: center;
+}
+/* COUNTER */
+
+/* CONTROLLED INPUT */
+.container .controlled-input {
+
+}
+/* CONTROLLED INPUT */
+
